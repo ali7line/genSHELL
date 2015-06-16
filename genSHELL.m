@@ -1,7 +1,11 @@
 function genSHELL(R,H)
 clear all
 cd mfiles
-importDataFile(R,H);
+if exist('R') == 1
+    importDataFile(R,H);
+else
+    importDataFile();
+end
 
 errorNumber=checkImport();
 

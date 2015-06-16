@@ -31,7 +31,7 @@ SPRING_RADIUS_LOW=shaftRadius+springToWall-12;
 
 ringN=shaftDepth/segmentHeight;
 FIXBOTTOM_LOW=(ringN)*(-segmentHeight-segmentGap)-segmentHeight/2-12;
-FIXBOTTOM_HIG=(ringN)*(-segmentHeight-segmentGap)-segmentHeight/1+12;
+FIXBOTTOM_HIG=(ringN)*(-segmentHeight-segmentGap)-segmentHeight/2+12;
 
 disp(sprintf('''SUPPOR'''));
 

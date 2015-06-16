@@ -4,8 +4,19 @@ function importDataFile(R,H)
 [inputPropNum,inputPropText] = xlsread('../Inputs/input.xls','Prop');
 caseNumber = inputShaftNum(1);
 modelNumber = inputShaftNum(2);
-shaftRadius = R;
-shaftDepth = H;
+
+if (exist('R') == 1)
+    shaftRadius = R;
+else
+    shaftRadius = inputShaftNum(3);
+end
+
+if (exist('H') == 1)
+    shaftDepth = H;
+else
+    shaftDepth = inputShaftNum(4);
+end
+
 segmentGap = inputShaftNum(5);
 segmentLength = inputShaftNum(6);
 segmentAngle = inputShaftNum(7);
