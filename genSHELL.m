@@ -1,5 +1,4 @@
 function genSHELL(R,H)
-clear all
 cd mfiles
 if exist('R') == 1
     importDataFile(R,H);
